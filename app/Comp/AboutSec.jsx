@@ -2,8 +2,68 @@
 
 import React, {useTransition, useState} from 'react'
 import Image from 'next/image';
+import TabButton from './TabButton';
+
+
+
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content:(
+    <ul>
+      <li>python</li>
+      <li>React</li>
+      <li>JavaScript</li>
+      <li>....</li>
+      <li>....</li>
+      <li>....</li>
+    </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content:(
+    <ul>
+      <li>python</li>
+      <li>React</li>
+      <li>JavaScript</li>
+      <li>....</li>
+      <li>...s.</li>
+      <li>..s..</li>
+    </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content:(
+    <ul>
+      <li>python</li>
+      <li>React</li>
+      <li>JavaScript</li>
+      <li>...s.</li>
+      <li>....</li>
+      <li>....</li>
+    </ul>
+    ),
+  }
+];
+
+
+
+
 
 const AboutSec = () => {
+
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransiton] = useTransition();
+
+  const handleTabChange = (id) =>{
+    startTransiton(() => {setTab(id); });
+  };
+  
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -14,16 +74,22 @@ const AboutSec = () => {
             paragraf for about me
           </p>
           <div className="flex flex-row mt-8">
-            <span className=" mr-3 font-semibold hover:text-white text-slate-300 border-b-2 border-b-cyan-500">
-              Skills
-            </span>
-            <span>
-              Education
-            </span>
-            <span>
-              Experience
-            </span>
-
+            <TabButton selectTab={()=> handleTabChange("skills")} active={tab==="skills"}>
+              {" "}
+               Skills{" "}
+            </TabButton>
+            
+            <TabButton selectTab={()=> handleTabChange("education")} active={tab==="education"}>
+              {" "}
+               Education{" "}
+            </TabButton>
+            <TabButton selectTab={()=> handleTabChange("certifications")} active={tab==="certifications"}>
+              {" "}
+               Certifications{" "}
+            </TabButton>
+          </div>
+          <div className='mt-8'>
+            {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
