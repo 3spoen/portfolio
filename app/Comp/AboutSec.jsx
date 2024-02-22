@@ -11,7 +11,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content:(
-    <ul>
+    <ul className=" list-disc pl-3">
       <li>python</li>
       <li>React</li>
       <li>JavaScript</li>
@@ -25,7 +25,7 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content:(
-    <ul>
+    <ul className=" list-disc pl-3">
       <li>python</li>
       <li>React</li>
       <li>JavaScript</li>
@@ -39,13 +39,13 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content:(
-    <ul>
+    <ul className=" list-disc pl-3">
       <li>python</li>
       <li>React</li>
       <li>JavaScript</li>
       <li>...s.</li>
       <li>....</li>
-      <li>....</li>
+      
     </ul>
     ),
   }
@@ -67,8 +67,11 @@ const AboutSec = () => {
   return (
     <section className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src= {require("/public/images/1.jpg")} width={300} height={300}/>
-        <div>
+        <Image src= {require("/public/images/1.jpg")}  
+               alt="me"
+               width={500}
+               height={500}/>
+        <div className="mt-4 md:mt-0  text-left flex flex-col h-full">
           <h2 className=" text-4xl text-cyan-100 mb-4">About me</h2>
           <p className="text-base lg:text-lg">
             paragraf for about me
@@ -88,7 +91,7 @@ const AboutSec = () => {
                Certifications{" "}
             </TabButton>
           </div>
-          <div className='mt-8'>
+          <div className='mt-4 pl-2'>
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
