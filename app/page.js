@@ -5,6 +5,7 @@ import AboutSec from "./Comp/AboutSec";
 import ProjectsSection from "./Comp/ProjectsSection";
 import { EmailSection } from "./Comp/EmailSection";
 import { Footer } from "./Comp/Footer";
+import Achievment from "./Comp/AchievementsSection"
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <Navbar />
     <div class="container mt-24 mx-auto px-12 py-4">
       <HeroSection/> 
+      {/*<Achievment/>*/}
       <AboutSec/>
       <ProjectsSection/>
       <EmailSection/>

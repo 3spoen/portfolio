@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer className='footer border border-t-slate-800 border-l-transparent border-r-transparent border-b-transparent'>
+    <footer className='footer border z-10 border-t-slate-800 border-l-transparent border-r-transparent border-b-transparent'>
         <div className=' container p-12 flex justify-between'>
             <span>
                 LOGO
