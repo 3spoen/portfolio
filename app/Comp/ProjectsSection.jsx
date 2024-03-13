@@ -45,7 +45,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section >
+    <section id='Projects' className=' pt-10'>
     <h2>
       My Projects
     </h2>

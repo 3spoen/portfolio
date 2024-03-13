@@ -89,7 +89,7 @@ export const EmailSection = () => {
     }, []);
     
     return (
-        <section className=' grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
+        <section id='Contact' className=' grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'>
              <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       
             <div className="z-10">
@@ -153,8 +153,19 @@ export const EmailSection = () => {
                         <textarea 
                         name="message" 
                         id="message" 
-                        placeholder="Yesterday is history, tomorrow is a mystery, but today is a gift. That's why they call it the present." 
-                        className=' bg-slate-900 border border-slate-600 placeholder-slate-600 text-gray-200 text-sm rounded-lg block w-full p-2' />
+                        placeholder="
+                        الحبٌ طفلٌ متى تحكمْ عليهِ يَقُلْ ظلمتَنِي ومتى حكَّمْتَه ظلما
+                        إن لم تُطِعْهُ بكى وإن أطعتَ بغى فلا يُريحُكَ محكوماً ولا حَكما
+                        مُذ قلتُ دعْ ليَ روحي ظلَّ يطلُبُها فقلتُ هاكَ اسْتَلِمْ روحي، فما اسْتلما
+                        وإنَّ بي وجَعاً شبهتُهُ بصدىً إنْ رنَّ رانَ ، وعشبٍ حينَ نمَّ نما
+                        
+                        Love is a child; when you judge him, he says, 'You have wronged me,' and when you empower him, he becomes unjust.
+                        If you don't obey him, he cries, and if you do, he transgresses, so he neither comforts you as a subject nor as a ruler.
+                        Since I said, ;Leave my soul to me,' he kept seeking it, so I said, 'Here, take my soul,' but he did not accept it.
+                        And indeed, there is a pain in me, I likened it to an echo: if it sounded, it lingered, and to grass: when it grew, it flourished.
+                        "
+                         
+                        className=' bg-slate-900 border border-slate-600 placeholder-slate-500 text-gray-200 text-sm rounded-lg block w-full p-2' />
                     </div>
                     <div>
                         <button type='submit' className=' hover:bg-cyan-900 bg-cyan-700 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
@@ -164,7 +175,7 @@ export const EmailSection = () => {
                             emailSubmitted &&(
                                
                                 <p className=' text-violet-400 text-sm mt-2'>
-                                    Email sent successfully!
+                                    Email sent successfully Habibi!
                                 </p>
                                
                             )

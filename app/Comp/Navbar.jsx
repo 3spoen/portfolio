@@ -1,36 +1,54 @@
 "use client";
 
 import React, {useState} from 'react'
-import Link from 'next/link'
+import {Link} from 'react-scroll'
 import NavLink from './NavLink'
 import { Bars3Icon , XMarkIcon } from '@heroicons/react/24/solid'
 import Menuoverlay from './Menuoverlay';
+import Image from 'next/image';
 
 const navLinks = [
     {
         title:"About",
-        path:"#about",
+        path:"about",
     },
     {
         title:"Projects",
-        path:"#Projects",
+        path:"Projects",
     },
     {
         title:"Contact",
-        path:"#Contact",
+        path:"Contact",
     },
 ] 
 
  
 const Navbar = ()=> {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const closeMenu = () => {
+        setNavbarOpen(false);
+      };
 
   return (
-    <nav className=" fixed top-0 right-0 left-0 border-b border-b-slate-600 bg-slate-950 bg-opacity-80  z-10">
+    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-slate-600 bg-slate-950 bg-opacity-80  ">
         <div className="flex flex-wrap container  items-center justify-between mx-auto  py-4 md:py-4 lg:py-6 px-4">
-            <Link href={"/"} className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-semibold">
-                LOGO
+            <Link 
+            to="top" 
+            spy={true} 
+            smooth={true} 
+            offset={-125}
+            duration={500} 
+            className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-white font-semibold">
+                <div className=' flex'>
+                    <Image
+                    alt="logo"
+                    width={100}
+                    height={100}
+                    src="/images/LOGO_3.png"
+                    />
+                </div>
             </Link>
+            
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(
@@ -50,14 +68,14 @@ const Navbar = ()=> {
                     {
                     navLinks.map((link, index) => (
                         <li key={index}>
-                            <NavLink href={link.path} title={link.title}/>
+                            <NavLink href={link.path} title={link.title} />
                         </li>
                     ))
                     }
                 </ul>
             </div>
         </div>
-        {navbarOpen ? <Menuoverlay links={navLinks} /> : null}
+        {navbarOpen ? <Menuoverlay links={navLinks} onClick={closeMenu} /> : null}
     </nav>
   )
 }
