@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 import {motion} from "framer-motion";
-import Link from 'next/link';
+import {Link} from 'react-scroll';
 
 
 
@@ -40,14 +40,30 @@ const HeroSection = () => {
                 Yesterday is history, tomorrow is a mystery, but today is a gift, and that's why they call it the present.
                 </p>
                 <div>
-                    <Link href="/#contact" className=" hover:bg-gradient-to-br hover:from-purple-600 hover:via-cyan-400 hover:to-blue-600 hover:text-black px-11  py-3  text-white   rounded-full inline-block w-full sm:w-fit mr-4 bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  ">
+                    <Link 
+                     
+                     to="Contact" 
+                    spy={true} 
+                    smooth={true} 
+                    offset={0}
+                    duration={1000} 
+                    className=" hover:bg-gradient-to-br hover:from-purple-600 hover:via-cyan-400 hover:to-blue-600 hover:text-black px-11  py-3  text-white   rounded-full inline-block w-full sm:w-fit mr-4 bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  ">
                         Hire me
                         </Link>
-                    <Link href="/" className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  mt-2">
-                        <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
-                            Download CV
+                    <a href="/docs" download="cv.pdf" className=' lg:mr-4'>
+                        <button  className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  mt-2">
+                            <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
+                                Download CV DE
                             </span>
-                        </Link>
+                        </button>
+                    </a>
+                    <a href="/docs" download="cv_EN.pdf" >
+                        <button  className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  mt-2">
+                            <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
+                                Download CV EN
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <motion.div initial= {{scale:0.75}} animate={{scale:1}} transition={{ duration:0.9}} className="col-span-5 place-self-center mt-4 lg:mt-9">

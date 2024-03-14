@@ -98,18 +98,21 @@ export const EmailSection = () => {
                 </h5>
                 <p className=' text-slate-200 mb-4 max-w-md'>
                     {" "}
-                    add the message hir make it so that you can tis the pepole
-
+                    Are you on the lookout for fresh talent with a passion for learning and growth? I'm at the beginning of my professional journey and eager to dive into new challenges and opportunities. Although my experience in the field is just starting, my dedication, quick learning ability, and commitment to contributing positively to any team are steadfast.
                 </p>
+                <p className=' text-white  mb-4 max-w-md'>
+                    Please use the form below to reach out to me with any opportunities, advice, or if you simply wish to connect and share insights. Your guidance and suggestions would be greatly appreciated as I navigate the start of my career.
+                    </p>
                 <div className=' socials flex flex-row gap-2'>
 
-                    <Link href="github.com/3spoen" >
+                    <a href="https://www.github.com/3spoen" target="_blank" rel="noopener noreferrer">
                         <Image src={GithubIcon} alt='Github Icon' />
-                    </Link>
+                    </a>
 
-                    <Link href="linkedin.com/in/omar-alali-3spoen" >
-                        <Image src={LinkedinIcon} alt='Linkedin Icon' />
-                    </Link>
+
+                    <a href="https://www.linkedin.com/in/omar-alali-3spoen" target="_blank" rel="noopener noreferrer">
+                         <Image src={LinkedinIcon} alt='LinkedIn Icon' />
+                    </a>
                 </div>
                 
             </div>
