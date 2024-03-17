@@ -25,10 +25,10 @@ const HeroSection = () => {
         // Same substring at the start will only be typed out once, initially
         'Omar!',
         5000, 
-        'Syrien Computer scientect ',
-        6000,
-        'Welcome to my Portfolio website.',
-        6000,
+        'Syrien Computer scientist ',
+        4000,
+        'Welcome to my website.',
+        5000,
         
       ]}
       wrapper="span"
@@ -37,7 +37,7 @@ const HeroSection = () => {
     />
                     </h1>
                 <p className=" text-slate-500 mb-6 text-base sm:text-lg lg:text-xl">{/*TODO:arbic sentens with vocals*/}
-                Yesterday is history, tomorrow is a mystery, but today is a gift, and that's why they call it the present.
+                Yesterday is history, tomorrow is a mystery, but today is a gift, and that&apos;s why they call it the present.
                 </p>
                 <div>
                     <Link 
@@ -50,7 +50,7 @@ const HeroSection = () => {
                     className=" hover:bg-gradient-to-br hover:from-purple-600 hover:via-cyan-400 hover:to-blue-600 hover:text-black px-11  py-3  text-white   rounded-full inline-block w-full sm:w-fit mr-4 bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  ">
                         Hire me
                         </Link>
-                    <a href="/docs" download="cv.pdf" className=' lg:mr-4'>
+                    <a href="/docs" download="cv.pdf" className=' mr-4'>
                         <button  className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  mt-2">
                             <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
                                 Download CV DE

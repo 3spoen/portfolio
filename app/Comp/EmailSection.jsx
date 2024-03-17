@@ -94,11 +94,11 @@ export const EmailSection = () => {
       
             <div className="z-10">
                 <h5 className=' text-xl font-bold text-white my-2 '>
-                    Let's Connect
+                    Let&apos;s Connect
                 </h5>
                 <p className=' text-slate-200 mb-4 max-w-md'>
                     {" "}
-                    Are you on the lookout for fresh talent with a passion for learning and growth? I'm at the beginning of my professional journey and eager to dive into new challenges and opportunities. Although my experience in the field is just starting, my dedication, quick learning ability, and commitment to contributing positively to any team are steadfast.
+                    Are you on the lookout for fresh talent with a passion for learning and growth? I&apos;m at the beginning of my professional journey and eager to dive into new challenges and opportunities. Although my experience in the field is just starting, my dedication, quick learning ability, and commitment to contributing positively to any team are steadfast.
                 </p>
                 <p className=' text-white  mb-4 max-w-md'>
                     Please use the form below to reach out to me with any opportunities, advice, or if you simply wish to connect and share insights. Your guidance and suggestions would be greatly appreciated as I navigate the start of my career.
