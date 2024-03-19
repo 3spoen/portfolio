@@ -13,7 +13,7 @@ import {Link} from 'react-scroll';
 const HeroSection = () => {
   return (
     <section className=' lg:py-16 ' id='top'>
-        <motion.div initial= {{opacity:0}} animate={{opacity:1}} transition={{ duration:0.9}} className=" grid grid-cols-1 lg:grid-cols-12">
+        <motion.div initial= {{opacity:0}} animate={{opacity:1}} transition={{ duration:2}} className=" grid grid-cols-1 lg:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left justify-self-start">
             <h1 className=" text-slate-50 mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-none font-extrabold">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-800 to-cyan-600">
