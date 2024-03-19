@@ -16,7 +16,9 @@ export default function Home() {
     <Head>
         <title>Omar Alali: Crafting Digital Experiences</title>
         <meta name="description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences" />
-        {/* Add other meta tags as needed */}
+
+        <meta property="og:description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences" />
+        <meta property="og:title" content="Omar Alali: Crafting Digital Experiences"></meta>
       </Head>
     <main className="flex min-h-screen flex-col bg-slate-950">
     <Navbar />
