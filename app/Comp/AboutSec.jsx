@@ -47,26 +47,26 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content:(
-    <ul className=" list-disc pl-3">
+    <ul className=" list-disc justify-between space-y-4 pl-3">
 
       <li>B.Sc. Informatik Friedrich Schiller University Jena
       {/*<a href="/docs"download="cv.pdf"><ArrowDownTrayIcon className="h-5 w-5" /></a> */}
-        <ul className="   text-slate-400 pl-4">
+        <ul className="   text-slate-400  pl-2">
           <li>Oct. 2018- Oct. 2023</li>
         </ul>
       </li>
 
       <li>DSH- Cours Friedrich Schiller University Jena
-        <ul className=" text-slate-400 pl-4">
+        <ul className=" text-slate-400  pl-2">
           <li>Apr. 2018- Sep. 2018</li>
         </ul>
       </li>
 
       
 
-      <li>Syrisches Abitur 
-        <ul className=" text-slate-400 pl-4">
-          <li>graduated am Jul 2015</li>
+      <li>Syrian high school 
+        <ul className=" text-slate-400 pl-2">
+          <li>Graduated on Jul 2015</li>
         </ul>
       </li>
 

@@ -16,7 +16,7 @@ export default function Home() {
     <Head>
     <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Omar Alali's Portfolio</title>
+        <title>Omar Alali&apos;s Portfolio</title>
         <meta name="description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences."/>
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
         {/* Open Graph Meta Tags */}
