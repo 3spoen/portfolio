@@ -4,6 +4,7 @@ import React, {useTransition, useState} from 'react'
 import Image from 'next/image';
 import TabButton from './TabButton';
 import { ArrowDownTrayIcon  } from '@heroicons/react/24/solid'
+import { motion } from "framer-motion"
 /** TODO: fix the image Problem when changing between the tabs( skills) */
 
 const TAB_DATA = [
@@ -106,12 +107,19 @@ const AboutSec = () => {
   return (
     <section className="text-white" id='about'>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <motion.div
+        key={tab}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+  <     Image src={TAB_DATA.find((t) => t.id === tab).image}
+              alt={TAB_DATA.find((t) => t.id === tab).title}
+              width={500}
+              height={400}
+        />
+      </motion.div>
         
-        <Image src= {TAB_DATA.find((t) => t.id === tab).image}  
-               
-               width={500}
-               height={400}
-               />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h1 className=" text-4xl font-bold  text-cyan-300 mb-4">
             About me:
