@@ -14,7 +14,7 @@ export default function Home() {
     <>
     
     <Head>
-    <title>Omar Alali's Portfolio</title>
+    <title>Omar Alali&apos;s Portfolio</title>
     <meta name="description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.3spoen.de/"/>
