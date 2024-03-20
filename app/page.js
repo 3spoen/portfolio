@@ -7,6 +7,7 @@ import { EmailSection } from "./Comp/EmailSection";
 import { Footer } from "./Comp/Footer";
 import Achievment from "./Comp/AchievementsSection"
 import Head from "next/head";
+import { Metatags } from "./Comp/Metatags";
 
 
 export default function Home() {
@@ -14,11 +15,7 @@ export default function Home() {
     <>
     
     <Head>
-        <title>Omar Alali: Crafting Digital Experiences</title>
-        <meta name="description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences" />
-
-        <meta property="og:description" content="Discover Omar Alali's portfolio: a blend of innovative design and tech. See how creativity and expertise shape impactful digital experiences" />
-        <meta property="og:title" content="Omar Alali: Crafting Digital Experiences"></meta>
+        <Metatags/>
       </Head>
     <main className="flex min-h-screen flex-col bg-slate-950">
     <Navbar />
