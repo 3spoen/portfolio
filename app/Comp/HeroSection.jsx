@@ -50,14 +50,14 @@ const HeroSection = () => {
                     className=" hover:bg-gradient-to-br hover:from-purple-600 hover:via-cyan-400 hover:to-blue-600 hover:text-black px-11  py-3  text-white   rounded-full inline-block w-full sm:w-fit mr-4 bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  ">
                         Hire me
                         </Link>
-                    <a href="/docs" download="cv.pdf"  alt="alt text" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.3spoen.de/docs/cv.pdf" download="cv.pdf"  alt="alt text" target="_blank" rel="noopener noreferrer">
                         <button  className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600 mr-4 mt-2">
                             <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
                                 Download CV DE
                             </span>
                         </button>
                     </a>
-                    <a href="/docs" download="cv_EN.pdf" alt="alt text" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://www.3spoen.de/docs/cv_EN.pdf" download="cv_EN.pdf" alt="alt text" target="_blank" rel="noopener noreferrer" >
                         <button  className="px-1  py-1 inline-block rounded-full w-full sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600  mt-2">
                             <span className="block bg-slate-950 hover:bg-slate-800 rounded-full px-5 py-2">
                                 Download CV EN
