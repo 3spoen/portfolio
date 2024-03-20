@@ -10,6 +10,7 @@ const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
+    image:"/images/00.png",
     content:(
       <ol className=' list-decimal pl-3'>
 
@@ -46,6 +47,7 @@ const TAB_DATA = [
   {
     title: "Education",
     id: "education",
+    image:"/images/Education.jpg",
     content:(
     <ul className=" list-disc justify-between space-y-4 pl-3">
 
@@ -76,6 +78,7 @@ const TAB_DATA = [
   {
     title: "Hobbies",
     id: "hobbies",
+    image:"/images/gocart.jpg",
     content:(
     <ul className=" list-disc pl-3">
       <li>Table Tennis</li>
@@ -103,11 +106,12 @@ const AboutSec = () => {
   return (
     <section className="text-white" id='about'>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src= {require("/public/images/about.jpg")}  
-               alt="me"
+        
+        <Image src= {TAB_DATA.find((t) => t.id === tab).image}  
+               
                width={500}
                height={400}
-               className=' px-1  py-1  rounded-xl mt-0 sm:w-fit bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600 '/>
+               />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h1 className=" text-4xl font-bold  text-cyan-300 mb-4">
             About me:
