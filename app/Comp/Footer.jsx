@@ -16,7 +16,7 @@ export const Footer = () => {
                 </div>
             </span>
             <p className=' text-slate-600'>
-            © 2023. All rights reserved.
+            © 2024. All rights reserved.
             </p>
         </div>
     </footer>

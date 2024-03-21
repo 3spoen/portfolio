@@ -30,7 +30,7 @@ const Navbar = ()=> {
       };
 
   return (
-    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-slate-600 bg-slate-950 bg-opacity-80  ">
+    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-cyan-600 bg-slate-950 bg-opacity-80  ">
         <div className="flex flex-wrap container  items-center justify-between mx-auto  py-4 md:py-4 lg:py-6 px-4">
             <Link 
             to="top" 
@@ -52,11 +52,11 @@ const Navbar = ()=> {
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(
-                        <button onClick={()=>setNavbarOpen(true)} className="text-slate-200 flex  items-center px-3 py-2 border rounded border-slate-400 hover:text-white hover:border-white">
+                        <button onClick={()=>setNavbarOpen(true)} className="text-purple-500 flex  items-center px-3 py-2 border rounded border-purple-500 hover:text-cyan-500 hover:border-cyan-500">
                             <Bars3Icon className="h-5 w-5"/>
                         </button>
                     ):(
-                        <button onClick={()=>setNavbarOpen(false)} className="text-slate-200 flex  items-center px-3 py-2 border rounded border-slate-400 hover:text-white hover:border-white">
+                        <button onClick={()=>setNavbarOpen(false)} className="text-purple-500 flex  items-center px-3 py-2 border rounded border-purple-500 hover:text-cyan-500 hover:border-cyan-500">
                             <XMarkIcon className="h-5 w-5"/>
                         </button>
                     )
