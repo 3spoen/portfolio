@@ -6,7 +6,7 @@ import ProjectsSection from "./Comp/ProjectsSection";
 import { EmailSection } from "./Comp/EmailSection";
 import { Footer } from "./Comp/Footer";
 import Achievment from "./Comp/AchievementsSection"
-import Head from "next/head";
+
 
 
 export default function Home() {

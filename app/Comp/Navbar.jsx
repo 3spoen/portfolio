@@ -6,31 +6,41 @@ import NavLink from './NavLink'
 import { Bars3Icon , XMarkIcon } from '@heroicons/react/24/solid'
 import Menuoverlay from './Menuoverlay';
 import Image from 'next/image';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
-const navLinks = [
-    {
-        title:"About",
-        path:"about",
-    },
-    {
-        title:"Projects",
-        path:"Projects",
-    },
-    {
-        title:"Contact",
-        path:"Contact",
-    },
-] 
+
+
+
 
  
 const Navbar = ()=> {
+
+    const { t } = useTranslation();
     const [navbarOpen, setNavbarOpen] = useState(false);
     const closeMenu = () => {
         setNavbarOpen(false);
       };
 
+      const navLinks = [
+        {
+            title:t('About'),
+            path:"about",
+        },
+        {
+            title:t('Projects'),
+            path:"Projects",
+        },
+        {
+            title:t('Contact'),
+            path:"Contact",
+        },
+    ] ;
+
   return (
-    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-cyan-600 bg-slate-950 bg-opacity-80  ">
+    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-cyan-600 bg-violet-950  ">
+        
+
         <div className="flex flex-wrap container  items-center justify-between mx-auto  py-4 md:py-4 lg:py-6 px-4">
             <Link 
             to="top" 
@@ -49,7 +59,13 @@ const Navbar = ()=> {
                 </div>
             </Link>
             
-            <div className="mobile-menu block md:hidden">
+                
+            
+            
+            <div className="mobile-menu  md:hidden flex items-center justify-between">
+                <div className=' pl-6 flex-grow '>
+                     <LanguageSwitcher/>
+                </div>
                 {
                     !navbarOpen ?(
                         <button onClick={()=>setNavbarOpen(true)} className="text-purple-500 flex  items-center px-3 py-2 border rounded border-purple-500 hover:text-cyan-500 hover:border-cyan-500">
@@ -61,9 +77,12 @@ const Navbar = ()=> {
                         </button>
                     )
                 }
+
             </div>
 
-            <div className="menu hidden md:block md:w-auto " id="navbar">
+            <div className="menu hidden  md:w-auto md:flex items-center justify-between " id="navbar">
+                
+            
                 <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                     {
                     navLinks.map((link, index) => (
@@ -73,6 +92,10 @@ const Navbar = ()=> {
                     ))
                     }
                 </ul>
+                <div className=' pl-6 flex-grow'>
+                     <LanguageSwitcher/>
+                </div>
+                
             </div>
         </div>
         {navbarOpen ? <Menuoverlay links={navLinks} onClick={closeMenu} /> : null}
