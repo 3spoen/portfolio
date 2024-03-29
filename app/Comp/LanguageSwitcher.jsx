@@ -17,9 +17,9 @@ const LanguageSwitcher = () => {
   return (
 
       <button
-       className=" px-4 text-blue-200 font-mono flex items-center text-xl md:p-0 hover:text-violet-400"
+       className=" md:px-2 px-2 md:py-2 py-1 border mr-2 border-purple-500 rounded text-blue-200 font-mono flex items-center text-xl md:p-0 hover:text-cyan-700 hover:border-cyan-700"
        onClick={toggleLanguage}>
-        {i18n.language === 'en' ? 'De' : 'En'}
+        {i18n.language === 'en' ? 'DE' : 'EN'}
         <LanguageIcon class="h-5 w-5" />
       </button>
  

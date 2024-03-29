@@ -38,7 +38,7 @@ const Navbar = ()=> {
     ] ;
 
   return (
-    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-cyan-600 bg-violet-950  ">
+    <nav className=" z-20 fixed top-0 right-0 left-0 border-b border-b-cyan-600 bg-[#03090a] opacity-90  ">
         
 
         <div className="flex flex-wrap container  items-center justify-between mx-auto  py-4 md:py-4 lg:py-6 px-4">
@@ -63,7 +63,7 @@ const Navbar = ()=> {
             
             
             <div className="mobile-menu  md:hidden flex items-center justify-between">
-                <div className=' pl-6 flex-grow '>
+                <div className='  flex-grow '>
                      <LanguageSwitcher/>
                 </div>
                 {

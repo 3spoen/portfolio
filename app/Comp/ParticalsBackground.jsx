@@ -47,8 +47,9 @@ export default function Particle() {
                 push: {
                   quantity: 4,
                 },
+                
                 repulse: {
-                  distance: 200,
+                  distance: 100,
                   duration: 0.4,
                 },
               },
@@ -59,10 +60,10 @@ export default function Particle() {
               },
               links: {
                 color: "#e0f2fe",
-                distance: 150,
-                enable: false,
+                distance: 75,
+                enable: true,
                 opacity: 0.5,
-                width: 1,
+                width: 0.3,
               },
               move: {
                 direction: "none",
@@ -71,15 +72,15 @@ export default function Particle() {
                   default: "bounce",
                 },
                 random: true,
-                speed: 1.2,
-                straight: false,
+                speed: 1.4,
+                straight: true,
               },
               number: {
                 density: {
                   enable: true,
                   area: 800,
                 },
-                value: 160,
+                value: 100,
               },
               opacity: {
                 value: 0.5,
