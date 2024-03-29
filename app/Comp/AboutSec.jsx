@@ -66,9 +66,10 @@ const AboutSec = () => {
       ),
     },
     {
+      
       title: "Education",
       id: "education",
-      image:"/images/Education.jpg",
+      image:"/images/Education1.png",
       content:(
       <ul className=" list-disc justify-between space-y-4 pl-3">
   
@@ -99,7 +100,7 @@ const AboutSec = () => {
     {
       title: "Hobbies",
       id: "hobbies",
-      image:"/images/gocart.jpg",
+      image:"/images/hoppies.png",
       content:(
       <ul className=" list-disc pl-3">
         <li>{t('Table Tennis')}</li>
@@ -123,6 +124,7 @@ const AboutSec = () => {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
+        
       >
   <     Image src={TAB_DATA.find((t) => t.id === tab).image}
               alt={TAB_DATA.find((t) => t.id === tab).title}
