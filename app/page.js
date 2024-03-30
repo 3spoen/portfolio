@@ -6,13 +6,18 @@ import ProjectsSection from "./Comp/ProjectsSection";
 import { EmailSection } from "./Comp/EmailSection";
 import { Footer } from "./Comp/Footer";
 import Achievment from "./Comp/AchievementsSection"
+import ParticalsBackground from './Comp/ParticalsBackground';
+
 
 
 export default function Home() {
   return (
+
+
     <main className="flex min-h-screen flex-col bg-slate-950">
+      <ParticalsBackground/>
     <Navbar />
-    <div class="container mt-24 mx-auto px-12 py-4">
+    <div className=" z-0 container mt-24 mx-auto px-12 py-4">
       <HeroSection/> 
       {/*<Achievment/>*/}
       <AboutSec/>
@@ -21,5 +26,6 @@ export default function Home() {
     </div>
     <Footer/>
     </main>
+
   );
 }

@@ -5,11 +5,13 @@ import GithubIcon from "../../public/images/github-icon.svg"
 import LinkedinIcon from "../../public/images/linkedin-icon.svg"
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next';
 
 export const EmailSection = () => {
 
     const [emailSubmitted, setEmailToSubmitted]= useState(false);
     const [showConfirmationImage, setShowConfirmationImage] = useState(false);
+    const { t } = useTranslation();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -94,14 +96,14 @@ export const EmailSection = () => {
       
             <div className="z-10">
                 <h5 className=' text-xl font-bold text-white my-2 '>
-                    Let&apos;s Connect
+                    {t("Let's Connect")}
                 </h5>
                 <p className=' text-slate-200 mb-4 max-w-md'>
                     {" "}
-                    Are you on the lookout for fresh talent with a passion for learning and growth? I&apos;m at the beginning of my professional journey and eager to dive into new challenges and opportunities. Although my experience in the field is just starting, my dedication, quick learning ability, and commitment to contributing positively to any team are steadfast.
+                    {t("EmailP1")}
                 </p>
                 <p className=' text-white  mb-4 max-w-md'>
-                    Please use the form below to reach out to me with any opportunities, advice, or if you simply wish to connect and share insights. Your guidance and suggestions would be greatly appreciated as I navigate the start of my career.
+                    {t('EmailP2')}
                     </p>
                 <div className=' socials flex flex-row gap-2'>
 
@@ -122,7 +124,7 @@ export const EmailSection = () => {
                     <div className='mb-6'>
                         <label htmlFor="email"  
                         className=' text-white block mb-2 text-sm font-medium'>
-                            Your email
+                            {t('Your email')}
                         </label>
                         <input 
                         name="email" 
@@ -137,7 +139,7 @@ export const EmailSection = () => {
                         <label 
                         htmlFor="subject"  
                         className=' text-white block mb-2 text-sm font-medium'>
-                            Subject
+                            {t('Subject')}
                         </label>
                         <input 
                         name = "subject" 
@@ -151,7 +153,7 @@ export const EmailSection = () => {
                         <label 
                         htmlFor="message" 
                         className=' text-white block text-sm mb-2 font-medium'>
-                            Message
+                            {t('Message')}
                         </label>
                         <textarea 
                         name="message" 
@@ -172,13 +174,13 @@ export const EmailSection = () => {
                     </div>
                     <div>
                         <button type='submit' className=' hover:bg-cyan-900 bg-cyan-700 text-white font-medium py-2.5 px-5 rounded-lg w-full'>
-                            Send
+                            {t('Send')}
                         </button>
                         {
                             emailSubmitted &&(
                                
                                 <p className=' text-violet-400 text-sm mt-2'>
-                                    Email sent successfully Habibi!
+                                   {t(' Email sent successfully Habibi!')}
                                 </p>
                                
                             )

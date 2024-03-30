@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer className='footer border z-10 border-t-slate-800 border-l-transparent border-r-transparent border-b-transparent'>
+    <footer className='footer border z-10 border-t-slate-800 bg-violet-950 bg-opacity-50 border-l-transparent border-r-transparent border-b-transparent'>
         <div className=' container p-12 flex justify-between'>
             <span>
             <div className=' flex'>
@@ -15,8 +15,8 @@ export const Footer = () => {
                     />
                 </div>
             </span>
-            <p className=' text-slate-600'>
-            © 2023. All rights reserved.
+            <p className='  text-slate-600'>
+            © 2024. All rights reserved.
             </p>
         </div>
     </footer>
