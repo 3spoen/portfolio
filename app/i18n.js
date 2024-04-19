@@ -35,8 +35,8 @@ const resources = {
       "HeroSectionP_2":"Welcome to my website.",
 
       "ProjectName_1":"Numbers Prediction using Artificial Neural Network",
-      "ProjectName_1":"Road Lane Line Detection",
-      "ProjectName_7":"Network Programming, Multiplayer Connect Four Java Game(incompleted)",
+      "ProjectName_2":"Road Lane Line Detection",
+      "ProjectName_77":"Network Programming, Multiplayer Connect Four Java Game(incompleted)",
       "ProjectDesc_1":"Programmed an artificial neural network that predicts a handwritten number from a 28x28 pixel picture using the MNIST database. Only the Numpy library and linear algebraic equations are used to construct the ANN",
       "ProjectDesc_2":"Used the Canny edge detection method and Hough transform in Python and openCV to identify a road lane from video input",
       "ProjectDesc_3":"Implemented parallel algorithms to enhance images of text for printing. The algorithms had to use hardware efficiently, thus OpenMP was used to parallelize and vectorize the C++ code",
@@ -81,7 +81,7 @@ const resources = {
 
       "ProjectName_1":"Zahlenvorhersage mit künstlichem neuronalen Netzwerk.",
       "ProjectName_2":"Erkennung von Fahrbahnmarkierungen",
-      "ProjectName_7":"Netzwerkprogrammierung, Multiplayer 'Vier Gewinnt' Java-Spiel",
+      "ProjectName_77":"Netzwerkprogrammierung, Multiplayer 'Vier Gewinnt' Java-Spiel",
       "ProjectDesc_1":" Ein künstliches neuronales Netzwerk wurde programmiert, das eine handgeschriebene Zahl aus einem 28x28 Pixel Bild mit Hilfe der MNIST-Datenbank vorhersagt. Nur die Numpy-Bibliothek und lineare algebraische Gleichungen wurden zum Aufbau des KNN verwendet",
       "ProjectDesc_2":" Die Canny-Kantenerkennungsmethode und die Hough-Transformation wurden in Python und openCV verwendet, um eine Straßenfahrbahn aus Videoeingaben zu identifizieren",
       "ProjectDesc_3":" Parallele Algorithmen wurden implementiert, um Bilder von Text für den Druck zu verbessern. Die Algorithmen sollten die Hardware effizient nutzen, daher wurde OpenMP verwendet, um den C++-Code zu parallelisieren und zu vektorisieren",

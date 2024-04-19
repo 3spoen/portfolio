@@ -65,7 +65,7 @@ const ProjectsSection = () => {
   previewUrl: "/",
 },{
   id:7,
-  title:"ProjectName_7",
+  title:"ProjectName_77",
   description:t("ProjectDesc_7"),
   image:"/images/4connect.png",
   tag: ["All",],
