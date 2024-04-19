@@ -36,7 +36,7 @@ const resources = {
 
       "ProjectName_1":"Numbers Prediction using Artificial Neural Network",
       "ProjectName_2":"Road Lane Line Detection",
-      "ProjectName_77":"Network Programming, Multiplayer Connect Four Java Game(incompleted)",
+      "ProjectName_7":"Multiplayer Connect Four Java Game(incompleted)",
       "ProjectDesc_1":"Programmed an artificial neural network that predicts a handwritten number from a 28x28 pixel picture using the MNIST database. Only the Numpy library and linear algebraic equations are used to construct the ANN",
       "ProjectDesc_2":"Used the Canny edge detection method and Hough transform in Python and openCV to identify a road lane from video input",
       "ProjectDesc_3":"Implemented parallel algorithms to enhance images of text for printing. The algorithms had to use hardware efficiently, thus OpenMP was used to parallelize and vectorize the C++ code",
@@ -81,10 +81,10 @@ const resources = {
 
       "ProjectName_1":"Zahlenvorhersage mit künstlichem neuronalen Netzwerk.",
       "ProjectName_2":"Erkennung von Fahrbahnmarkierungen",
-      "ProjectName_77":"Netzwerkprogrammierung, Multiplayer 'Vier Gewinnt' Java-Spiel",
-      "ProjectDesc_1":" Ein künstliches neuronales Netzwerk wurde programmiert, das eine handgeschriebene Zahl aus einem 28x28 Pixel Bild mit Hilfe der MNIST-Datenbank vorhersagt. Nur die Numpy-Bibliothek und lineare algebraische Gleichungen wurden zum Aufbau des KNN verwendet",
-      "ProjectDesc_2":" Die Canny-Kantenerkennungsmethode und die Hough-Transformation wurden in Python und openCV verwendet, um eine Straßenfahrbahn aus Videoeingaben zu identifizieren",
-      "ProjectDesc_3":" Parallele Algorithmen wurden implementiert, um Bilder von Text für den Druck zu verbessern. Die Algorithmen sollten die Hardware effizient nutzen, daher wurde OpenMP verwendet, um den C++-Code zu parallelisieren und zu vektorisieren",
+      "ProjectName_7":"Multiplayer 'Vier Gewinnt' Java-Spiel (unvollständig)",
+      "ProjectDesc_1":"Ein künstliches neuronales Netzwerk wurde programmiert, das eine handgeschriebene Zahl aus einem 28x28 Pixel Bild mit Hilfe der MNIST-Datenbank vorhersagt. Nur die Numpy-Bibliothek und lineare algebraische Gleichungen wurden zum Aufbau des KNN verwendet",
+      "ProjectDesc_2":"Die Canny-Kantenerkennungsmethode und die Hough-Transformation wurden in Python und openCV verwendet, um eine Straßenfahrbahn aus Videoeingaben zu identifizieren",
+      "ProjectDesc_3":"Parallele Algorithmen wurden implementiert, um Bilder von Text für den Druck zu verbessern. Die Algorithmen sollten die Hardware effizient nutzen, daher wurde OpenMP verwendet, um den C++-Code zu parallelisieren und zu vektorisieren",
       "ProjectDesc_4":"Entwicklung eines umfassenden digitalen Portfolios auf React-Basis, um eine große Auswahl an Projekten zu präsentieren, von maschinellem Lernen bis zur Webentwicklung",
       "ProjectDesc_5":"Python- und OpenGL-basierte Mandelbrot-Visualisierer nutzt die parallele Verarbeitung für eine effiziente Hardware-Nutzung und ermöglicht die Erforschung von Fraktalen in Echtzeit mit fortschrittlichen Shader-Effekten",
       "ProjectDesc_6":"Implementierung eines Einkaufswagens mit Spring Boot für das Backend in Java, Optimierung für effizientes Datenmanagement und sichere Transaktionsverarbeitung",
